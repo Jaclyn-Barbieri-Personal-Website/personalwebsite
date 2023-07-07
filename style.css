@@ -10,10 +10,12 @@ body {
 }
 
 header {
-    margin: 10px;
-    border: 5px solid;
+    margin: 10
+    px;
+    border: 5cap solid;
     border-color: white;
-    padding: 4%;
+    padding: 3%;
+    background-color: white;
 }
 
 .name {
@@ -38,6 +40,10 @@ header {
     margin-right: auto;
 }
 
+.hobby_images {
+    width: 300px;
+}
+
 .intro {
     font-family: 'Cormorant Garamond', serif;
 }
@@ -55,5 +61,6 @@ footer {
     border: 5px solid;
     border-color: white;
     text-align: center;
+    background-color: white;
     
 }
