@@ -1,0 +1,59 @@
+/* make same classes each page for header and footer */
+/* header and footer will have white background? */
+/* add same background color for each page.. purple? */
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&=Raleway:wght@100;500&display=swap');
+
+body {
+    background-color: rgb(204, 137, 218);
+}
+
+header {
+    margin: 10px;
+    border: 5px solid;
+    border-color: white;
+    padding: 4%;
+}
+
+.name {
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.tabs {
+    font-size: 30px;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social_links {
+    height: 40px;
+    display: inline-block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+section {
+    margin: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0;
+    border: 5px solid;
+    border-color: white;
+    text-align: center;
+    
+}
