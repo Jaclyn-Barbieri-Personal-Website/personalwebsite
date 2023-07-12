@@ -9,6 +9,13 @@
 /* body {
     background-color: rgb(204, 137, 218);
 } */
+
+@media screen and (max-width: 768px) {
+    .media_size {
+        width: 100%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -84,21 +91,37 @@ header {
 }
 
 .button1 {
-    background-color: aliceblue;
+    background-color: white;
     border: 2px solid black;
+    color: black;
+    font-size: large;
     padding: 2px 20px;
+    transition: 0.8s;
 
 }
 
+.button1:hover {
+    background-color: rgb(216, 182, 248);
+}
+
+/* Contact Form Adjustments */
 .contact_form {
     display: grid;
-    
 
 }
 
+input {
+    width: 300px;
+}
+
+#message_box {
+    height: 150px;
+}
+
+/* Footer */
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0 !important;
     width: 100%;
     height: 2.5rem;
     padding: 0;
