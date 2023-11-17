@@ -1,133 +1,247 @@
-/* make same classes each page for header and footer */
-/* header and footer will have white background? */
-/* add same background color for each page.. purple? */
-/*  */
-
 /* imported font */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&=Raleway:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&=Raleway:wght@100;500&display=swap");
 
-/* body {
-    background-color: rgb(204, 137, 218);
-} */
+body {
+  background-color: #080808;
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
-    .media_size {
-        width: 100%;
-    }
+  .media_size {
+    width: 100%;
+  }
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    height: 150vh;
-    width: 200vh;
-    background-image: url(/GHP_images/simple_background.jpg);
-    background-position: center;
-    background-size: cover;
-    /* padding-left: 5%;
-    padding-right: 5%; */
-    box-sizing: border-box;
-    position: relative;
-
+  padding: 10px 10%;
 }
 
-header {
-    margin: 10px;
-    border: 5cap solid;
-    border-color: white;
-    padding: 3%;
-    background-color: white;
+:root {
+  --bg-color: #000000;
+  --second-bg-color: #000000;
+  --text-color: #323946;
+  --main-color: #8c52ff;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* header {
+  margin: 10px;
+  border: 5cap solid;
+  border-color: white;
+  padding: 3%;
+  background-color: white; 
+  /* width: 100%;
+  height: 100vh;
+  background-image: url();
+  background-size: cover;
+  background-position: center; 
+} */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 300px;
+}
+
+nav ul li {
+  /* so it will be horizontally lined */
+  display: inline-block;
+  list-style: none;
+  /* space for 10 on top and bottom and 20 on left and right */
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+/* for hover effects */
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #8c52ff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #8c52ff;
+}
 .name {
-    font-size: 30px;
-    float: left;
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-
+  font-size: 30px;
+  float: left;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
 }
 
-.tabs {
-    font-size: 30px;
-    float: right;
-    font-family: 'Raleway', sans-serif;
-}
+/* .tabs {
+  font-size: 30px;
+  float: right;
+  font-family: "Raleway", sans-serif;
+} */
 
 .social_links {
-    height: 40px;
-    display: inline-block;
+  height: 40px;
+  display: inline-block;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hobby_images {
-    width: 200px;
+  width: 200px;
 }
 
-
 .hobbies {
-    display: grid;
-    gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .intro {
-    font-family: 'Cormorant Garamond', serif;
-    display: grid;
-    border-color: aqua;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 10px;
-    
-    
-}
-
-.projects {
-    display: grid;
-    /* grid-template-rows: 1fr 1 fr 1fr; */
-    gap: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  display: grid;
+  border-color: aqua;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 10px;
 }
 
 .button1 {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    font-size: large;
-    padding: 2px 20px;
-    transition: 0.8s;
-
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: large;
+  padding: 2px 20px;
+  transition: 0.8s;
 }
 
 .button1:hover {
-    background-color: rgb(216, 182, 248);
+  background-color: rgb(216, 182, 248);
 }
 
 /* Contact Form Adjustments */
 .contact_form {
-    display: grid;
-
+  display: grid;
 }
 
 input {
-    width: 300px;
+  width: 300px;
 }
 
 #message_box {
-    height: 150px;
+  height: 150px;
 }
 
 /* Footer */
 footer {
-    position: fixed;
-    bottom: 0 !important;
-    width: 100%;
-    height: 2.5rem;
-    padding: 0;
-    border: 5px solid;
-    border-color: white;
-    text-align: center;
-    background-color: white;
-    
+  position: fixed;
+  bottom: 0 !important;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0;
+  border: 5px solid;
+  border-color: white;
+  text-align: center;
+  background-color: white;
+}
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1) var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
 }

@@ -12,39 +12,65 @@
     <title>Portfolio Page</title>
   </head>
   <body>
-    <header>
-      <span class="name"> Jaclyn Barbieri </span>
-      <nav class="tabs">
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+    <div id="header">
+      <!-- <span class="name"> Jaclyn Barbieri </span> -->
+      <div class="container">
+        <nav class="tabs">
+          <img
+            src="images/Purple Black Bold Neon Makeup Artist Logo.png"
+            class="logo"
+          />
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <!-- Background -->
-    <div class="container">
+    <div>
+      <!-- 3 sections for 3 different projects -->
 
-    <!-- 3 sections for 3 different projects -->
+      <!-- Project 1 -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">Project 1</h2>
+        <div class="portfolio-container">
+          <div class="portfolio-box">
+            <img
+              class="projects"
+              src="images/triPPP_team4_thumbnail.png"
+              alt=""
+            />
+            <div class="portfolio-layer">
+              <h4>triPPP</h4>
+              <p>
+                A collaborative travel application that allows users to vote on
+                activities and create trips, has a map interface to see details
+                of different cities within an area, with built in journal to
+                capture specific moments of your trip. Utilized Google Maps API,
+                Javascript, React/Redux, Git, Node, HTML5, CSS, Sequelize,
+                PostgresSQL. Assumed an independent full-stack role responsible
+                for both database setup and journal creation. Used Redux slices
+                for state management and employed props to efficiently pass
+                unique IDs to the journal.
+              </p>
+            </div>
+            <div class="portfolio-box">
+              <img src="" alt="">
+            </div>
 
-    <!-- Project 1 -->
-    <section class="projects">
-      <h2>Project 1</h2>
-      <p>paragraph about project</p>
-    <!-- Project 2 -->
-      <h2>Project 2</h2>
-      <p>paragraph about project</p>
-    <!-- Project 3 -->
-      <h2>Project 3</h2>
-      <p>paragraph about project</p>
-    </section>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- Footer for bottom of each page -->
     <footer>
       <footer>
         <!-- LinkedIn -->
-        <a
-          href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"
+        <a href="https://www.linkedin.com/in/jaclyn-barbieri/"
           ><img
             class="social_links"
             src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
